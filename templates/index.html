@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application Tracker</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Tracker</h1>
+
+  <form action="/submit" method="post">
+    
+    <label for="jobName">Job Name:</label>
+    <input type="text" id="jobName" name="jobName" required><br>
+    
+    <label for="jobLink">Job Link:</label>
+    <input type="url" id="jobLink" name="jobLink" required><br>
+    
+    <label for="jobDescription">Job Description:</label>
+    <textarea id="jobDescription" name="jobDescription" required></textarea><br>
+    
+    <label for="applyDate">Application Date:</label>
+    <input type="date" id="applyDate" name="applyDate" required><br>
+    
+    <label for="jobStatus">Status:</label>
+    
+    <select id="jobStatus" name="jobStatus" required>
+      <option value="applied">Applied</option>
+      <option value="interview">Interview</option>
+      <option value="offered">Offered</option>
+      <option value="rejected">Rejected</option>
+    </select><br>
+    
+    <button type="submit">Add to spreadsheet</button>
+
+  </form>
+</body>
+</html>
+

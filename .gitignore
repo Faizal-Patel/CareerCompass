@@ -1,0 +1,18 @@
+# credentials
+/credentials.json
+
+# pickle file
+/token.pickle
+
+# test script for google ap success
+/test_script
+/test_script/test_google_api.py
+
+# sheets id 
+/spreadsheet_id.txt
+
+#python env 
+/.python-version
+
+# ds store
+/.DS_Store
